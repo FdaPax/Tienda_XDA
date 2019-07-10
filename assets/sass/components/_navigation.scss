@@ -1,0 +1,125 @@
+.header {
+  display: inline-block;
+  width: 100%;
+}
+
+.navigation {
+  position: relative;
+  margin: 0.5rem;
+
+  &__logo {
+    position: absolute;
+  }
+
+  &__text {
+    background-color: $smoky-black;
+    font-family: $old-standard;
+    color: $white;
+    padding: 1.2rem 1rem;
+    margin: 0;
+  }
+
+  &__container {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    a {
+      display: block;
+      text-align: left;
+      padding: 0.5em;
+      font-family: $raleway;
+      font-size: $small;
+      font-weight: $bold;
+      color: $smoky-black;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    a:hover {
+      color: $quick-silver;
+      font-weight: $regular;
+    }
+  }
+}
+
+.collapsible {
+  text-align: right;
+
+  label {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.5rem;
+    font-size: $small;
+  }
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    margin: 0;
+    &__logo {
+      position: absolute;
+    }
+
+    &__text {
+      background-color: #0c0910;
+      font-family: "Old Standard TT", sans-serif;
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      margin: 0;
+      box-sizing: border-box;
+      height: 95px;
+      width: 125px;
+      text-align: center;
+    }
+
+    &__container {
+      max-height: 100%;
+      padding: 0.5em 3em 0.5em 0;
+      overflow: visible;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: flex-end;
+      margin: inherit;
+      padding: 0.5rem 0;
+    }
+
+    &__item {
+      a {
+        padding: 0.2rem 1em 1rem 1rem;
+        font-family: $raleway;
+        font-size: $medium;
+        font-weight: $bold;
+        color: $smoky-black;
+      }
+
+      a:hover {
+        color: $quick-silver;
+        font-weight: $regular;
+      }
+    }
+  }
+
+  .collapsible {
+    label {
+      display: none;
+    }
+  }
+}

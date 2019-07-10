@@ -1,0 +1,35 @@
+.news {
+  &__container {
+    position: relative;
+  }
+  &__left {
+    padding: 2rem 3.5rem;
+    background-color: black;
+    width: 90%;
+    @include relative-converter(height, rem, 200, 16);
+    position: absolute;
+    left: 0;
+  }
+  &__title {
+    color: $white;
+    padding-bottom: .5rem;
+  }
+  &__mail {
+      color: $white;
+      padding-bottom: .7rem;
+  }
+  &__right {
+    background-color: brown;
+    width: 10%;
+    @include relative-converter(height, rem, 200, 16);
+    position: absolute;
+    right: 0;
+  }
+  input {
+    color: $granite-gray;
+    font-size: .8rem;
+    font-family: $raleway;
+    width: 100%;
+    padding: .3rem;
+  }
+}

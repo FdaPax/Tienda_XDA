@@ -1,0 +1,29 @@
+.main {
+  &__photo {
+    @include relative-converter(height, rem, 400, 16);
+    background-image: url("../img/mobile-photo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__container {
+    padding: 3.5rem 3.5rem 3rem 3.5rem;
+  }
+  &__title {
+    color: $smoky-black;
+  }
+  &__text {
+    padding: .5rem 0 1rem 0;
+    @include relative-converter(line-height, rem, 35, 16);
+    color: $granite-gray;
+    font-weight: $regular;
+  }
+  &__button {
+    border: solid 0.1rem $smoky-black;
+    background-color: $white;
+    padding: 0.5rem 1.8rem;
+    font-family: $raleway;
+    font-weight: $bold;
+    font-size: $x-large + px;
+  }
+}

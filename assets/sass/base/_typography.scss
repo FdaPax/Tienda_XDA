@@ -12,18 +12,24 @@ p {
 /* Mixin conversor de medida*/
 h1 {
   @include relative-converter(font-size, rem, $xxx-large, 16);
+  font-family: $old-standard;
+  font-weight: $bold;
 }
 h2 {
   @include relative-converter(font-size, rem, $xx-large, 16);
+  font-family: $old-standard;
+  font-weight: $bold;
 }
 h3 {
   @include relative-converter(font-size, rem, $x-large, 16);
+  font-family: $raleway;
 }
 h4 {
   @include relative-converter(font-size, rem, $large, 16);
 }
 h5 {
   @include relative-converter(font-size, rem, $medium, 16);
+  font-family: $old-standard;
 }
 h6 {
   @include relative-converter(font-size, rem, $small, 16);
