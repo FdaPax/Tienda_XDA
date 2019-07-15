@@ -27,3 +27,15 @@
     font-size: $x-large + px;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .main {
+    &__photo {
+      width: 50%;
+      float: right;
+      height: 37.6rem;
+      background-image: url("../img/desktop-photo.png");
+    }
+  }  
+}
+

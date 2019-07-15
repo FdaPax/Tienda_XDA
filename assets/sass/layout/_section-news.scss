@@ -19,17 +19,28 @@
       padding-bottom: .7rem;
   }
   &__right {
-    background-color: brown;
     width: 10%;
-    @include relative-converter(height, rem, 200, 16);
+    height: 12.5rem;
     position: absolute;
     right: 0;
+    
+    writing-mode: vertical-lr;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h3 {
+      font-family: $old-standard;
+      color: $smoky-black;
+    background-color: $white;
+    font-weight: $bold;
+    }
   }
-  input {
-    color: $granite-gray;
-    font-size: .8rem;
-    font-family: $raleway;
-    width: 100%;
-    padding: .3rem;
+  
+}
+@media only screen and (min-width: 1024px) {
+  .news {
+    width: 50%;
   }
 }
